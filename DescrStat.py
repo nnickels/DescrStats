@@ -32,6 +32,10 @@ def DescrStat(datafile):
     RETURNS: data_mean, data_std, data_var
     --------------------------------------------------------------------
     ’’’
+<<<<<<< HEAD
+=======
+
+>>>>>>> upstream/docstr
     data = np.loadtxt(datafile)
     data_mean = data.mean()
     data_std = data.std()
