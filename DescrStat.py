@@ -11,7 +11,7 @@ import numpy as np
 
 
 def DescrStat(datafile):
-    ’’’
+    """
     --------------------------------------------------------------------
     This function prints and returns descriptive statistics on a comma-
     delimited text file of a single variable
@@ -31,7 +31,9 @@ def DescrStat(datafile):
 
     RETURNS: data_mean, data_std, data_var
     --------------------------------------------------------------------
-    ’’’
+    """
+
+
     data = np.loadtxt(datafile)
     data_mean = data.mean()
     data_std = data.std()
