@@ -11,7 +11,7 @@ import numpy as np
 
 
 def DescrStat(datafile):
-    ’’’
+    '''
     --------------------------------------------------------------------
     This function prints and returns descriptive statistics on a comma-
     delimited text file of a single variable
@@ -24,18 +24,14 @@ def DescrStat(datafile):
     OBJECTS CREATED WITHIN FUNCTION:
     data = (N,) vector, data from datafile
     data_mean = scalar, mean of the data
-    data_std = scalar >= 0, standard deviation of the data
+    data_std = scalar >= 0, standard deviation of the data 
     data_var = scalar >= 0, variance of the data
 
     FILES CREATED BY THIS FUNCTION: None
 
     RETURNS: data_mean, data_std, data_var
     --------------------------------------------------------------------
-    ’’’
-<<<<<<< HEAD
-=======
-
->>>>>>> upstream/docstr
+    '''
     data = np.loadtxt(datafile)
     data_mean = data.mean()
     data_std = data.std()
