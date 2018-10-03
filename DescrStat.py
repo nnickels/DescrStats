@@ -21,16 +21,18 @@ def DescrStat(datafile):
 
     OTHER FUNCTIONS AND FILES CALLED BY THIS FUNCTION: None
     
-        OBJECTS CREATED WITHIN FUNCTION:
-        data = (N,) vector, data from datafile
-        data_mean = scalar, mean of the data
-        data_std = scalar >= 0, standard deviation of the data data_var = scalar >= 0, variance of the data
+    OBJECTS CREATED WITHIN FUNCTION:
+    data = (N,) vector, data from datafile
+    data_mean = scalar, mean of the data
+    data_std = scalar >= 0, standard deviation of the data 
+    data_var = scalar >= 0, variance of the data
 
     FILES CREATED BY THIS FUNCTION: None
 
     RETURNS: data_mean, data_std, data_var
     --------------------------------------------------------------------
     """
+
 
     data = np.loadtxt(datafile)
     data_mean = data.mean()
